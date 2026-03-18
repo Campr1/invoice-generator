@@ -1,5 +1,4 @@
 from datetime import date
-
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import LETTER
 from reportlab.pdfbase import pdfmetrics
@@ -61,8 +60,7 @@ BILL_TO = [
 ]
 
 INVOICE_REF = "ACME-2026-001"
-INVOICE_DATE = "February 20, 2026"
-# INVOICE_DATE = date.today().strftime("%B %d, %Y")
+INVOICE_DATE = date.today().strftime("%B %d, %Y")
 
 RE_LINE = "Renovation Services – Bathroom & Meat/Fish Station Scope"
 
