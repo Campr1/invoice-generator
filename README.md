@@ -19,7 +19,7 @@ This project generates a PDF invoice using Python and the ReportLab library.
    pip install reportlab
 
 2. Run the script:
-   python invoice.py
+   python3 invoice.py
 
 3. The invoice PDF will be generated in the project folder.
 
