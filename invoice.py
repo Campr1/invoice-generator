@@ -51,62 +51,50 @@ def money(amount):
 
 
 # ---------- invoice data ----------
-CONTRACTOR_NAME = "ACME RENOVATIONS INC."
+CONTRACTOR_NAME = "NORTHWIND CREATIVE STUDIO"
 CONTRACTOR_PHONE = "Tel: 555-123-4567"
 
 BILL_TO = [
-    "Sample Client Corporation",
+    "Sample Client Co.",
     "123 Business Street, Suite 400",
-    "Toronto, ON  M1A 1A1",
+    "Toronto, ON  M5V 2T6",
 ]
 
-INVOICE_REF = "ACME-2026-001"
+INVOICE_REF = "NCS-2026-001"
 INVOICE_DATE = "February 20, 2026"
 # INVOICE_DATE = date.today().strftime("%B %d, %Y")
 
-RE_LINE = "Renovation Services – Bathroom & Meat/Fish Station Scope"
+RE_LINE = "Brand Design and Website Refresh"
 
-SUBTOTAL = 15600.00
+SUBTOTAL = 4800.00
 HST_RATE = 0.13
 
 PAYMENT_TERMS = [
-    "50% deposit upon start of project",
-    "25% at halfway completion",
-    "25% upon final completion and customer inspection",
+    "50% deposit upon project kickoff",
+    "50% due on final delivery",
 ]
 
 SCOPE = {
-    "Bathroom #1": [
-        "Demolish existing bathroom walls and flooring.",
-        "Complete new plumbing rough-ins and relocate toilet as discussed.",
-        "Install new vanity.",
-        "Complete new electrical rough-ins and install new industrial exhaust fan.",
-        "Install new lighting fixtures.",
-        "Install two (2) new electrical outlets.",
-        "Remove existing door and trims; supply and install new door and trims.",
-        "Remove existing floor tiles and install new floor tiles.",
-        "Install wall tiles up to 4 feet high around bathroom walls.",
-        "Install new toilet.",
-        "Paint bathroom in customer’s selected colour.",
-        "Enlarge doorway to make it handicap and wheelchair accessible.",
+    "Discovery and Planning": [
+        "Kickoff meeting and project requirements review.",
+        "Content and navigation planning for the new marketing site.",
+        "Creative direction and visual reference gathering.",
     ],
-    "Meat & Fish Station": [
-        "Excavate floor and install brand new plumbing system with proper drainage.",
-        "Install all required sinks and stainless steel countertops.",
-        "Run new dedicated electrical outlets for industrial fridge and meat saw.",
-        "Electrical permit required.",
-        "Properly slope and tile fish station floor.",
-        "Build raised platform to create additional upper space for meat and fish ordering.",
+    "Design": [
+        "Homepage layout concepts and responsive page mockups.",
+        "Refined typography, color palette, and component styling.",
+        "Revision round based on client feedback.",
     ],
-    "Additional Work": [
-        "Build new cashier counter area.",
-        "Paint main areas upon completion.",
+    "Delivery": [
+        "Export of approved brand assets for web use.",
+        "Developer-ready design handoff package.",
+        "Final review and launch support.",
     ],
 }
 
 
 # ---------- PDF generation ----------
-def build_pdf(filename="invoice_ACME_RENO_INC.pdf"):
+def build_pdf(filename="invoice_NORTHWIND_CREATIVE_STUDIO.pdf"):
     c = canvas.Canvas(filename, pagesize=LETTER)
     page_width, page_height = LETTER
 

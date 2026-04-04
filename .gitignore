@@ -1,6 +1,7 @@
 .DS_Store
 *.pdf
+__pycache__/
+*.pyc
+.env
 reverse.js
 startup_expense_report.py
-.DS_Store
-*.pdf

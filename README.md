@@ -1,12 +1,11 @@
 # Invoice Generator (Python + ReportLab)
 
-This project generates a PDF invoice using Python and the ReportLab library.
+This project generates a sample PDF invoice using Python and the ReportLab library.
 
 ## Features
-- Dynamic PDF invoice generation
-- Automatic date generation
-- Tax(HST) calculation and total breakdown
-- Structured layout (Bill To, Scope of Work, Payment Terms)
+- PDF invoice generation from editable sample data
+- Canadian tax (HST) calculation and total breakdown
+- Structured layout for billing details, project scope, and payment terms
 - Wrapped text handling for long descriptions
 
 ## Tech Stack
@@ -16,7 +15,7 @@ This project generates a PDF invoice using Python and the ReportLab library.
 ## How to Run
 
 1. Install dependencies:
-   pip install reportlab
+   python3 -m pip install reportlab
 
 2. Run the script:
    python3 invoice.py
@@ -25,5 +24,5 @@ This project generates a PDF invoice using Python and the ReportLab library.
 
 ## Notes
 
-- All data in this project uses placeholder values
-- The script can be easily modified to support dynamic user input in future versions
+- All invoice content in this repo uses placeholder sample values
+- Update the constants in `invoice.py` to customize the generated invoice
